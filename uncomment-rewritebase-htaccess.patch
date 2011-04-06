@@ -1,0 +1,13 @@
+diff --git .htaccess .htaccess
+index 9c4a161..68844ee 100644
+--- .htaccess
++++ .htaccess
+@@ -104,7 +104,7 @@ DirectoryIndex index.php index.html index.htm
+   #
+   # If your site is running in a VirtualDocumentRoot at http://example.com/,
+   # uncomment the following line:
+-  # RewriteBase /
++  RewriteBase /
+ 
+   # Pass all requests not referring directly to files in the filesystem to
+   # index.php. Clean URLs are handled in drupal_environment_initialize().
