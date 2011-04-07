@@ -1,0 +1,15 @@
+diff --git sites/default/settings.php sites/default/settings.php
+index 6ebacff..7bb0594 100755
+--- sites/default/settings.php
++++ sites/default/settings.php
+@@ -444,3 +444,10 @@ ini_set('session.cookie_lifetime', 2000000);
+  * Remove the leading hash signs to disable.
+  */
+ # $conf['allow_authorize_operations'] = FALSE;
++
++/**
++ * Allow for local overrides by looking for a file named settings.local.php.
++ */
++if (file_exists(dirname(__FILE__) . '/settings.local.php')) {
++  require_once(dirname(__FILE__) .'/settings.local.php');
++}

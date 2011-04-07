@@ -3,3 +3,4 @@ Long-term patches maintained by Palantir.net.
 Patches include:
 
 - uncomment-rewritebase-htaccess.patch: Uncomment the RewriteBase / in .htaccess file. This is useful for environments where the RewriteBase needs to be set for clean URLs to work.
+- allow-settings-local-overrides.patch: Add a snippet to settings.php to look for a settings.local.php, so that developers can override settings.php locally.
