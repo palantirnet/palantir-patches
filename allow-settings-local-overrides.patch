@@ -1,6 +1,8 @@
---- sites/default/default.settings.php
-+++ sites/default/default.settings.php
-@@ -444,3 +444,10 @@ ini_set('session.cookie_lifetime', 2000000);
+diff --git a/sites/default/default.settings.php b/sites/default/default.settings.php
+index 30699a0..21d1c3a 100644
+--- a/sites/default/default.settings.php
++++ b/sites/default/default.settings.php
+@@ -510,3 +510,10 @@ $conf['404_fast_html'] = '<html xmlns="http://www.w3.org/1999/xhtml"><head><titl
   * Remove the leading hash signs to disable.
   */
  # $conf['allow_authorize_operations'] = FALSE;
@@ -11,3 +13,14 @@
 +if (file_exists(dirname(__FILE__) . '/settings.local.php')) {
 +  require_once(dirname(__FILE__) .'/settings.local.php');
 +}
+diff --git a/sites/default/settings.local.php b/sites/default/settings.local.php
+new file mode 100644
+index 0000000..2319352
+--- /dev/null
++++ b/sites/default/settings.local.php
+@@ -0,0 +1,5 @@
++<?php
++
++// Use a different database.
++// $databases['default']['default']['database'] = 'my_database';
++
