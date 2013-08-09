@@ -1,8 +1,8 @@
 diff --git a/sites/default/default.settings.php b/sites/default/default.settings.php
-index 30699a0..21d1c3a 100644
+index 40f552e..d713a1e 100644
 --- a/sites/default/default.settings.php
 +++ b/sites/default/default.settings.php
-@@ -510,3 +510,10 @@ $conf['404_fast_html'] = '<html xmlns="http://www.w3.org/1999/xhtml"><head><titl
+@@ -551,3 +551,10 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
   * Remove the leading hash signs to disable.
   */
  # $conf['allow_authorize_operations'] = FALSE;
